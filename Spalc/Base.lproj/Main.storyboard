@@ -55,6 +55,9 @@
                                                     <constraint firstAttribute="width" constant="169" id="MBW-cZ-JiY"/>
                                                 </constraints>
                                                 <state key="normal" image="clear"/>
+                                                <connections>
+                                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nr-lq-bqQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-YA-VVq">
                                                 <rect key="frame" x="174" y="0.0" width="53" height="54"/>
@@ -63,6 +66,9 @@
                                                     <constraint firstAttribute="height" constant="54" id="vVa-K1-F85"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="divideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adW-jB-k8R"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -109,6 +115,9 @@
                                                     <constraint firstAttribute="width" constant="53" id="HBI-9T-yki"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="multiplyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iqM-ca-58A"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -155,6 +164,10 @@
                                                     <constraint firstAttribute="width" constant="53" id="n9b-Mz-GdW"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="multiplyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSP-7V-Bgr"/>
+                                                    <action selector="subtractButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHD-Wd-mJK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -201,6 +214,9 @@
                                                     <constraint firstAttribute="width" constant="53" id="a6C-5L-SPo"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="addButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNy-7j-HkY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -239,12 +255,15 @@
                                                     <constraint firstAttribute="height" constant="54" id="uHi-FM-Bef"/>
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
+                                                <connections>
+                                                    <action selector="equalsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8a-5v-iVJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm4-U2-zD6" userLabel="counter">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm4-U2-zD6" userLabel="display">
                                 <rect key="frame" x="199" y="110" width="215" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="H6w-gT-LgA"/>
@@ -278,6 +297,9 @@
                             <constraint firstItem="BLh-Pk-MgG" firstAttribute="trailing" secondItem="zm4-U2-zD6" secondAttribute="trailing" constant="12" id="k5I-oF-hbb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="display" destination="zm4-U2-zD6" id="Oko-6S-Rr5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
