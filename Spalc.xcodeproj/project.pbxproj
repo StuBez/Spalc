@@ -14,6 +14,8 @@
 		17F345B61BBC0A5400E5DE00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F345B41BBC0A5400E5DE00 /* LaunchScreen.storyboard */; };
 		17F345C11BBC0A5400E5DE00 /* SpalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F345C01BBC0A5400E5DE00 /* SpalcTests.swift */; };
 		17F345CC1BBC0A5400E5DE00 /* SpalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F345CB1BBC0A5400E5DE00 /* SpalcUITests.swift */; };
+		17F345DA1BBC0ABA00E5DE00 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 17F345D91BBC0ABA00E5DE00 /* btn.wav */; settings = {ASSET_TAGS = (); }; };
+		17F345DD1BBC1F6300E5DE00 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F345DC1BBC1F6300E5DE00 /* Minecraft.ttf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		17F345C71BBC0A5400E5DE00 /* SpalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F345CB1BBC0A5400E5DE00 /* SpalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpalcUITests.swift; sourceTree = "<group>"; };
 		17F345CD1BBC0A5400E5DE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F345D91BBC0ABA00E5DE00 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		17F345DC1BBC1F6300E5DE00 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		17F345AA1BBC0A5400E5DE00 /* Spalc */ = {
 			isa = PBXGroup;
 			children = (
+				17F345DC1BBC1F6300E5DE00 /* Minecraft.ttf */,
+				17F345D91BBC0ABA00E5DE00 /* btn.wav */,
 				17F345AB1BBC0A5400E5DE00 /* AppDelegate.swift */,
 				17F345AD1BBC0A5400E5DE00 /* ViewController.swift */,
 				17F345AF1BBC0A5400E5DE00 /* Main.storyboard */,
@@ -192,6 +198,7 @@
 				TargetAttributes = {
 					17F345A71BBC0A5400E5DE00 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = TD9WS9UYKL;
 					};
 					17F345BB1BBC0A5400E5DE00 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -230,7 +237,9 @@
 			files = (
 				17F345B61BBC0A5400E5DE00 /* LaunchScreen.storyboard in Resources */,
 				17F345B31BBC0A5400E5DE00 /* Assets.xcassets in Resources */,
+				17F345DD1BBC1F6300E5DE00 /* Minecraft.ttf in Resources */,
 				17F345B11BBC0A5400E5DE00 /* Main.storyboard in Resources */,
+				17F345DA1BBC0ABA00E5DE00 /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Spalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.littlerobot.Spalc;
@@ -409,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Spalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.littlerobot.Spalc;
@@ -483,6 +494,7 @@
 				17F345D21BBC0A5400E5DE00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F345D31BBC0A5400E5DE00 /* Build configuration list for PBXNativeTarget "SpalcTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +503,7 @@
 				17F345D51BBC0A5400E5DE00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F345D61BBC0A5400E5DE00 /* Build configuration list for PBXNativeTarget "SpalcUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +512,7 @@
 				17F345D81BBC0A5400E5DE00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
