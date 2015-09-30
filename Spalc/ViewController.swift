@@ -49,7 +49,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearButtonPressed(sender: UIButton) {
-        processOperation(Operation.Clear)
+        playSound()
+        clear()
     }
     
     @IBAction func divideButtonPressed(sender: UIButton) {
@@ -138,6 +139,15 @@ class ViewController: UIViewController {
     
     internal func isReadyToPerformAnOperation() -> Bool {
         return runningNumber != ""
+    }
+    
+    internal func clear() {
+        display.text = "0"
+        runningNumber = ""
+        leftCalculationPart = ""
+        rightCalculationPart = ""
+        result = ""
+        currentOperation = Operation.None
     }
 }
 
